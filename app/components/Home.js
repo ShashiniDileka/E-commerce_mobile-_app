@@ -9,7 +9,7 @@ export default class Home extends React.Component{
     render(){
         return(
             <ScrollView style= {StyleSheet.container}>
-                <Header/>
+               
                 <Banner/>
                 <Topics/>
 
