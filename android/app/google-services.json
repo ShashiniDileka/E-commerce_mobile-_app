@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1022494573025",
+    "project_id": "shopmelkapp",
+    "storage_bucket": "shopmelkapp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1022494573025:android:ae2646577a72747b3852a0",
+        "android_client_info": {
+          "package_name": "com.shopmelkapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1022494573025-h0jgqpqap7940m01er93j9cnh93lhmbp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCbw9K0mcFeWe-PxHjqIC_-XUtIHOyXAZo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1022494573025-h0jgqpqap7940m01er93j9cnh93lhmbp.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
