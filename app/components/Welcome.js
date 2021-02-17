@@ -1,36 +1,35 @@
 
+import 'react-native-gesture-handler'; 
 import React from 'react';
-import {ImageBackground,Text,StyleSheet,View,Image,TouchableOpacity,Button} from 'react-native';
-import { NavigationContainer, StackActions } from  '@react-navigation/native';
-import {createStackNavigator} from '@react-navigation/stack';
+import {ImageBackground,Text,StyleSheet,View,Image,TouchableOpacity} from 'react-native';
+ 
+export default class APP extends React.Component{
+  render(){
+    return(
+          <View style={styles.container}>
+            <ImageBackground
+                source={require('./app/image/wallpaper.jpg')}
+                style={{width:'100%',height:'100%'}}>
+                         
+                     <Text style={styles.logoText}>shopme.lk</Text> 
+                     <View>
+                    <View style ={styles.logocontainer}>
+                        <Image style = {styles .logo} source={require ('./app/image/R.jpg')}/> 
+                           </View>  
+                            <PrimaryButton
+                              onPress={()=> navigation.navigate('Signlogin')}
+                              title="click here"
+                            />
+                  
+           </View>
+                 
 
-const Welcome =({navigation})=>{
-  return(
-      <View style={styles.container}>
-        <ImageBackground>
-            source={require('./image/wallpaper.jpg')}
-            style={{width:'100%',height:'100%'}}
-                     
-                <Text style={styles.logoText}>shopme.lk</Text> 
-                <View>
-                <View style ={styles.logocontainer}>
-                    <Image style = {styles .logo} source={require ('./image/R.jpg')}/> 
-                       </View>  
-                       
-                          <Text style={styles.loginText}>Click Here</Text>
-                              <Button
-                               title =" click here" 
-                               onPress={()=> navigation.navigate('signlogin')}
-                                />
-                             
-                        </View> 
-             
+                </ImageBackground>
+          </View>
+    );
+  }
+};
 
-        </ImageBackground>
-      </View>
-);
-  
-}
 const styles = StyleSheet.create({
   container:{
     flex:1 
@@ -47,11 +46,15 @@ const styles = StyleSheet.create({
   },
 
   logocontainer:{
-   
+   // paddingHorizontal:70,
+    //marginBottom:90,
+   // marginTop: 80,
     justifyContent:'center',
     alignItems:'center',
     width:null,
     height:null,
+    //aspectRatio:1.5,
+    //resizeMode:'contain',
     paddingVertical:2,
   },
 
@@ -66,12 +69,12 @@ const styles = StyleSheet.create({
     margin:80,
     backgroundColor:"#8b008b",
     fontWeight: 'bold',
+  
+  
+ 
+
   }
 
 
 
 });  
-
-export default Welcome;
-
-
